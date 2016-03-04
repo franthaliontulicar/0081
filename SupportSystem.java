@@ -30,7 +30,7 @@ public class SupportSystem
      * message and enter into a dialog with the user, until the user
      * ends the dialog.
      */
-    public void start()
+   public void start()
     {
         boolean finished = false;
 
@@ -39,7 +39,7 @@ public class SupportSystem
         while(!finished) {
             String input = reader.getInput();
 
-            if(input.startsWith("bye")) {
+            if(input.toLowerCase().contains("bye")) {
                 finished = true;
             }
             else {

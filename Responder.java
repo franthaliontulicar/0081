@@ -37,6 +37,7 @@ public class Responder
         palabrasClaves.put(palabra4,"adios!! nos vemos!!!");
 
     }
+
     /**
      * Generate a response.
      * @return   A string that should be displayed as the response
@@ -59,13 +60,9 @@ public class Responder
                 int num = random.nextInt(respuestas.size());
                 respuesta = respuestas.get(num);
                 respuestas.remove(respuesta);
-            
+
             }
-            
-            else
-            {
-               respuesta = "No entiendo que me estas diciendo";
-            }
+
         }
         return respuesta;
     }

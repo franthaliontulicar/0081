@@ -35,15 +35,16 @@ public class SupportSystem
         boolean finished = false;
 
         printWelcome();
+        String palabra =  "";
 
         while(!finished) {
             String input = reader.getInput();
 
-            if(input.contains("bye")) {
+            if(input.trim().toLowerCase().contains("bye")) {
                 finished = true;
             }
             else {
-                String response = responder.generateResponse();
+                String response = responder.respuestaPorPalabra(palabra);
                 System.out.println(response);
             }
         }

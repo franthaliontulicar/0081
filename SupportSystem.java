@@ -35,7 +35,7 @@ public class SupportSystem
         boolean finished = false;
 
         printWelcome();
-        String palabra =  "";
+       
 
         while(!finished) {
             String input = reader.getInput();
@@ -44,7 +44,7 @@ public class SupportSystem
                 finished = true;
             }
             else {
-                String response = responder.respuestaPorPalabra(palabra);
+                String response = responder.respuestaPorPalabra(input);
                 System.out.println(response);
             }
         }
